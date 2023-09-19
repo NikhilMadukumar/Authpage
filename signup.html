@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGig Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="images/CampusGig.png" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Sign Up</h2>
+        <form id="signup-form" onsubmit="return validateForm()">
+            <div class="form-control">
+                <input type="text" id="email" required>
+                <label>Email</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" required>
+                <label>Password</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="confirm-password" required>
+                <label>Confirm Password</label>
+                <span id="password-match-message" class="error-message"></span>
+            </div>
+            <button type="submit" id="signup-button" disabled>Sign Up</button>
+
+           
+        </form>
+        <p>Already have an account? <a href="index.html">Log in</a></p>
+        <small>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+            <a href="#">Learn more.</a>
+        </small>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
